@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamalka | Graphic & Web Designer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/FAV.png" />
+
+  <!-- Google Fonts for Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for Social Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background Decorative Ambient Glows -->
+  <div class="bg-glow glow-top-left"></div>
+  <div class="bg-glow glow-bottom-right"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <a href="#" class="logo-link">
+      <img src="images/logo.svg" alt="DX Graphics Logo" class="site-logo" />
+    </a>
+    <nav>
+      <a href="#about" class="nav-link active">ABOUT</a>
+      <a href="#work" class="nav-link">WORK</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Profile Section -->
+  <main class="hero-section" id="about">
+    
+    <!-- Left Column: Personal Intro & Education -->
+    <div class="column left-col reveal">
+      <div class="intro-block">
+        <h1 class="greeting">Hi,</h1>
+        <h2 class="name">I'm CHAMALKA.</h2>
+        <h3 class="role-title">GRAPHIC & WEB DESIGNER</h3>
+      </div>
+
+      <!-- CV Download Button -->
+      <div class="cv-block">
+        <a href="assets/Chamalka_CV.pdf" download class="cv-btn">
+          <i class="fa-solid fa-file-arrow-down"></i> Download CV
+        </a>
+      </div>
+
+      <div class="info-block">
+        <p class="label">Education :</p>
+        <p class="value cyan-text">Nagoya Medical Secretary Welfare & IT College</p>
+      </div>
+
+      <div class="info-block">
+        <p class="label">Focus :</p>
+        <ul class="focus-list">
+          <li>Graphic Design</li>
+          <li>UI/UX Design</li>
+          <li>Front-End Development</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Center Column -->
+    <div class="column center-col reveal">
+      <div class="profile-frame">
+        <img src="images/ME.jpg" alt="Chamalka - Profile Photo" class="profile-img" />
+      </div>
+
+      <div class="tools-block">
+        <h3 class="tools-title">Tools</h3>
+        <ul class="tools-list">
+          <li class="tool-red">• Photoshop</li>
+          <li class="tool-red">• Illustrator</li>
+          <li class="tool-purple">• Figma</li>
+          <li class="tool-cyan">• HTML • CSS</li>
+          <li class="tool-blue">• JavaScript</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Column-->
+    <div class="column right-col reveal">
+      <p class="bio-text">
+        <span class="red-text">I'm a Graphic & Web Designer passionate about creating visually engaging and user-friendly digital experiences.</span>
+        <span class="purple-text">Currently studying IT in Japan,</span>
+        <span class="blue-text">I'm continuously improving my skills in branding, UI/UX, and front-end development while building creative projects that combine aesthetics with functionality.</span>
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Work Showcase Section -->
+  <section class="work-section" id="work">
+    <h2 class="section-title reveal">WORK</h2>
+
+   <div class="portfolio-grid">
+
+      <!-- Work Item 1 -->
+      <div class="portfolio-card reveal">
+        <div class="card-image-wrapper">
+          <img src="images/DXGLOGO.png" alt="Brand Identity" />
+        </div>
+        <div class="card-info">
+          <h3>Brand Identity</h3>
+          <p class="category">Graphic Design / Branding</p>
+          <button class="view-project-btn" data-project="1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+
+      <!-- Work Item 2 -->
+      <div class="portfolio-card reveal">
+        <div class="card-image-wrapper">
+          <img src="images/cafe.jpg" alt="E-Commerce Platform" />
+        </div>
+        <div class="card-info">
+          <h3>E-Commerce Platform</h3>
+          <p class="category">Web Design / UI/UX</p>
+          <button class="view-project-btn" data-project="2">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+
+      <!-- Work Item 3 -->
+      <div class="portfolio-card reveal">
+        <div class="card-image-wrapper">
+          <video autoplay loop muted playsinline class="card-video">
+            <source src="images/ad65a37df0b961a27e7620ff63906bf2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="card-info">
+          <h3>Animation Showcase</h3>
+          <p class="category">Web Design / UI/UX</p>
+          <button class="view-project-btn" data-project="3">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+
+      <!-- Work Item 4 -->
+      <div class="portfolio-card reveal">
+        <div class="card-image-wrapper">
+          <img src="images/angel.jpg" alt="Editorial Magazine" />
+        </div>
+        <div class="card-info">
+          <h3>Editorial Magazine</h3>
+          <p class="category">Graphic Design / Layout</p>
+          <button class="view-project-btn" data-project="4">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section reveal">
+    <h2 class="section-title">CONTACT</h2>
+    <h3 class="contact-subtitle">Let's Work Together</h3>
+    <p class="contact-tagline">Have a project in mind? Drop me a line.</p>
+
+    <!-- Formspree Integration (Action URL එකට Formspree ID එක දාන්න) -->
+    <form class="contact-form" action="https://formspree.io/f/xbjnqkyw" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+     <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 DAREXx. All Rights Reserved.</p>
+  </footer>
+<!-- Project Detail Modal Popup -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div id="modalBody">
+        
+      </div>
+    </div>
+  </div>
+  <!-- Custom Scroll & Animation Script -->
+  <script>
+    // Smooth Scroll Reveal Animation
+    window.addEventListener('scroll', revealOnScroll);
+
+    function revealOnScroll() {
+      var reveals = document.querySelectorAll('.reveal');
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('active');
+        }
+      }
+    }
+
+    // Trigger initial reveal on load
+    revealOnScroll();
+  </script>
+
+  <!-- Custom Animations JS -->
+  <script>
+    // 1. Custom Interactive Cursor (Neon Glow)
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // 2. 3D Card Tilt Effect on Hover
+    document.querySelectorAll('.portfolio-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        const wrapper = card.querySelector('.card-image-wrapper');
+        if (wrapper) {
+          wrapper.style.transform = `rotateY(${x / 10}deg) rotateX(${-y / 10}deg) scale(1.05)`;
+        }
+      });
+
+      card.addEventListener('mouseleave', () => {
+        const wrapper = card.querySelector('.card-image-wrapper');
+        if (wrapper) {
+          wrapper.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';
+        }
+      });
+    });
+    // Projects Data Storage
+const projectsData = {
+  1: {
+    title: "Brand Identity Design",
+    category: "Graphic Design / Branding",
+    media: '<img src="images/DXGLOGO.png" alt="Brand Identity" />',
+    description: "Comprehensive branding package created for a modern client. Focused on visual identity, color schemes, typography guidelines, and social media assets to establish a strong market presence.",
+    tools: ["Photoshop", "Illustrator", "Figma"]
+  },
+  2: {
+    title: "E-Commerce Platform UI/UX",
+    category: "Web Design / UI/UX",
+    media: '<img src="images/cafe.jpg" alt="E-Commerce Platform" />',
+    description: "Modern UI/UX design prototype for a specialty cafe and online store. Built with user-centered design principles, featuring seamless checkout flows and responsive mobile layouts.",
+    tools: ["Figma", "HTML5", "CSS3", "JavaScript"]
+  },
+  3: {
+    title: "Motion Graphics & Animation",
+    category: "Web Design / Motion",
+    media: '<video autoplay loop muted playsinline><source src="images/ad65a37df0b961a27e7620ff63906bf2.mp4" type="video/mp4" /></video>',
+    description: "Dynamic video and motion graphic animation for digital advertisement campaigns, designed to capture user engagement across web and social media channels.",
+    tools: ["After Effects", "Photoshop", "Figma"]
+  },
+  4: {
+    title: "Editorial Magazine Layout",
+    category: "Graphic Design / Print",
+    media: '<img src="images/angel.jpg" alt="Editorial Magazine" />',
+    description: "Creative magazine editorial layout showcasing high-end typography, grid systems, and artistic photo composition tailored for print and digital publishing.",
+    tools: ["InDesign", "Photoshop", "Illustrator"]
+  }
+};
+
+// Modal Logic
+const modal = document.getElementById('projectModal');
+const modalBody = document.getElementById('modalBody');
+const closeBtn = document.querySelector('.modal-close');
+
+document.querySelectorAll('.view-project-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const projectId = button.getAttribute('data-project');
+    const project = projectsData[projectId];
+
+    if (project) {
+      const toolsHtml = project.tools.map(tool => `<span class="tech-tag">${tool}</span>`).join('');
+      
+      modalBody.innerHTML = `
+        <h2 class="modal-project-title">${project.title}</h2>
+        <p class="modal-project-category">${project.category}</p>
+        <div class="modal-image-container">${project.media}</div>
+        <p class="modal-project-description">${project.description}</p>
+        <div class="modal-tech-stack">${toolsHtml}</div>
+      `;
+      modal.style.display = 'flex';
+    }
+  });
+});
+
+// Close Modal
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close Modal when clicking outside content
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
