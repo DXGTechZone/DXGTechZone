@@ -97,6 +97,27 @@
     </div>
 
   </main>
+  <!-- Stats Animated Counter Section -->
+  <section class="stats-section reveal">
+    <div class="stats-container">
+      
+      <div class="stat-card">
+        <h3 class="stat-number" data-target="15">0</h3>
+        <p class="stat-label">Projects Completed</p>
+      </div>
+
+      <div class="stat-card">
+        <h3 class="stat-number" data-target="100">%</h3>
+        <p class="stat-label">Client Satisfaction</p>
+      </div>
+
+      <div class="stat-card">
+        <h3 class="stat-number" data-target="3">0</h3>
+        <p class="stat-label">Years Experience</p>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Work Showcase Section -->
   <section class="work-section" id="work">
@@ -322,10 +343,52 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+// Close Modal when clicking outside content
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+// Animated Counter Logic
+const statNumbers = document.querySelectorAll('.stat-number');
+let hasAnimated = false;
+
+function startCounterAnimation() {
+  const statsSection = document.querySelector('.stats-section');
+  if (!statsSection) return;
+
+  const sectionPos = statsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.2;
+
+  if (sectionPos < screenPos && !hasAnimated) {
+    hasAnimated = true;
+
+    statNumbers.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const isPercent = counter.innerText.includes('%');
+      let count = 0;
+      const speed = target / 50;
+
+      const updateCount = () => {
+        count += speed;
+        if (count < target) {
+          counter.innerText = Math.ceil(count) + (isPercent ? '%' : '+');
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target + (isPercent ? '%' : '+');
+        }
+      };
+
+      updateCount();
+    });
+  }
+}
+
+window.addEventListener('scroll', startCounterAnimation);
+
   </script>
 
 </body>
 </html>
 
-</body>
-</html>
